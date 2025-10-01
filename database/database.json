@@ -1,0 +1,128 @@
+{
+    "topics": [
+        {
+            "id": "1",
+            "Name": "HTML"
+        },
+        {
+            "id": "2",
+            "Name": "CSS"
+        },
+        {
+            "id": "3",
+            "Name": "Kỹ Thuật Phần Mền"
+        }
+    ],
+    "questions": [
+        {
+            "id": "1",
+            "topicId": "1",
+            "questionText": "Thẻ HTML nào dùng để tạo liên kết?",
+            "questionType": "single_choice"
+        },
+        {
+            "id": "2",
+            "topicId": "2",
+            "questionText": "Thuộc tính CSS nào để đổi màu chữ?",
+            "questionType": "single_choice"
+        },
+        {
+            "id": "3",
+            "topicId": "3",
+            "questionText": "Mô hình thác nước (Waterfall model) là gì?",
+            "questionType": "multiple_choice"
+        }
+    ],
+    "answers": [
+        {
+            "id": "1",
+            "questionId": "1",
+            "answerText": "<a>",
+            "isCorrect": true
+        },
+        {
+            "id": "2",
+            "questionId": "1",
+            "answerText": "<link>",
+            "isCorrect": false
+        },
+        {
+            "id": "3",
+            "questionId": "1",
+            "answerText": "<href>",
+            "isCorrect": false
+        },
+        {
+            "id": "4",
+            "questionId": "1",
+            "answerText": "<url>",
+            "isCorrect": false
+        },
+        {
+            "id": "5",
+            "questionId": "2",
+            "answerText": "background-color",
+            "isCorrect": false
+        },
+        {
+            "id": "6",
+            "questionId": "2",
+            "answerText": "font-color",
+            "isCorrect": false
+        },
+        {
+            "id": "7",
+            "questionId": "2",
+            "answerText": "color",
+            "isCorrect": true
+        },
+        {
+            "id": "8",
+            "questionId": "2",
+            "answerText": "text-style",
+            "isCorrect": false
+        },
+        {
+            "id": "9",
+            "questionId": "3",
+            "answerText": "Là mô hình phát triển tuần tự",
+            "isCorrect": true
+        },
+        {
+            "id": "10",
+            "questionId": "3",
+            "answerText": "Các giai đoạn nối tiếp nhau",
+            "isCorrect": true
+        },
+        {
+            "id": "11",
+            "questionId": "3",
+            "answerText": "Có thể quay lại giai đoạn trước dễ dàng",
+            "isCorrect": false
+        },
+        {
+            "id": "12",
+            "questionId": "3",
+            "answerText": "Chỉ phù hợp cho dự án lớn",
+            "isCorrect": false
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "Dai",
+            "email": "buivandai23010@gmail.com",
+            "password": "lamvua",
+            "token": "xinchaomoinguoi"
+        },
+        {
+            "id": "f511"
+        },
+        {
+            "id": "2",
+            "name": "hong van tran",
+            "email": "hongtran@gamil.com",
+            "password": "handoi"
+        }
+    ]
+}
