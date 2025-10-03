@@ -25,17 +25,240 @@
       ],
       "correctAnswer": 2
     },
+
     {
       "id": "2",
-      "topicID": 2,
-      "question": "CSS la viet tat cua cai gi",
+      "topicID": 1,
+      "question": "Trong HTML thuộc tính nào là để làm tiêu đề lớn ",
       "answers": [
-        "hello",
-        "hello bui van dai",
-        "xin chao ca nha"
+        "H1",
+        "<A>",
+        "<p></p>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "3",
+      "topicID": 1,
+      "question": "BVD là viết tắt của từ gì ",
+      "answers": [
+        "Bệnh viện dược",
+        "browers value daliy",
+        "BÙI VĂN ĐẠI"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "4",
+      "topicID": 1,
+      "question": "Thuộc tính nào dùng để đặt địa chỉ URL cho thẻ <a>?",
+      "answers": [
+        "src",
+        "href",
+        "link"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "5",
+      "topicID": 1,
+      "question": "Thẻ nào dùng để chèn ảnh vào trang HTML?",
+      "answers": [
+        "<picture>",
+        "<img>",
+        "<image>"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "6",
+      "topicID": 1,
+      "question": "Dòng khai báo nào thường đứng đầu một tài liệu HTML5?",
+      "answers": [
+        "<!DOCTYPE html>",
+        "<!-- HTML5 -->",
+        "<html version=5>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "7",
+      "topicID": 1,
+      "question": "Thẻ nào là thẻ ngữ nghĩa (semantic), dùng cho nội dung chính của trang?",
+      "answers": [
+        "<section>",
+        "<div>",
+        "<span>"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "8",
+      "topicID": 1,
+      "question": "Thuộc tính alt của <img> dùng để làm gì?",
+      "answers": [
+        "Chỉ định kích thước ảnh",
+        "Văn bản thay thế khi ảnh không hiển thị",
+        "Liên kết đến ảnh khác"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "9",
+      "topicID": 2,
+      "question": "CSS là viết tắt của gì?",
+      "answers": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Styling System"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "10",
+      "topicID": 2,
+      "question": "HTML la viet tat cua",
+      "answers": [
+        "xin chao",
+        "hello world",
+        "bui van dai"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "11",
+      "topicID": 2,
+      "question": "Thuộc tính nào để căn giữa chữ trong phần tử?",
+      "answers": [
+        "text-align",
+        "align-center",
+        "font center"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": "12",
+      "topicID": 2,
+      "question": "NGÀY SINH ĐẦY ĐỦ CỦA BÙI VĂN ĐẠI",
+      "answers": [
+        "10-23-2004",
+        "28-03-2005",
+        "28-10-2005"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "13",
+      "topicID": 2,
+      "question": "HTML la viet tat cua",
+      "answers": [
+        "xin chao",
+        "hello world",
+        "bui van dai"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "14",
+      "topicID": 2,
+      "question": "CSS có thể được viết theo cách nào?",
+      "answers": [
+        "Inline CSS",
+        "Internal CSS",
+        "External CSS"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "15",
+      "topicID": 2,
+      "question": "Thuộc tính nào thay đổi kích thước chữ?",
+      "answers": [
+        "text-size",
+        "font-size",
+        "color-size"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "16",
+      "topicID": 3,
+      "question": "Mô hình phát triển phần mềm Waterfall (thác nước) có đặc điểm gì?",
+      "answers": [
+        ". Các giai đoạn thực hiện tuần tự",
+        "Các giai đoạn làm song song",
+        "Không cần phân tích yêu cầu"
+      ],
+      "correctAnswer": 1
+    },
+
+    {
+      "id": "17",
+      "topicID": 3,
+      "question": "Agile nhấn mạnh điều gì?",
+      "answers": [
+        "Tuân thủ quy trình nghiêm ngặt",
+        "Linh hoạt, phản hồi nhanh thay đổi",
+        "Tài liệu chi tiết quan trọng hơn phần mềm chạy được"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "18",
+      "topicID": 3,
+      "question": "Giai đoạn nào trong phát triển phần mềm thường diễn ra đầu tiên?",
+      "answers": [
+        "Thiết kế (Design)",
+        "Phân tích yêu cầu (Requirement Analysis)",
+        "Kiểm thử (Testing)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "19",
+      "topicID": 3,
+      "question": "UML được sử dụng để làm gì?",
+      "answers": [
+        "Ngôn ngữ lập trình",
+        "Ngôn ngữ mô hình hóa phần mềm",
+        "Hệ điều hành"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "id": "20",
+      "topicID": 3,
+      "question": "HTML la viet tat cua",
+      "answers": [
+        "xin chao",
+        "hello world",
+        "bui van dai"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "21",
+      "topicID": 3,
+      "question": "Khái niệm “Maintainability” trong phần mềm nói về gì?",
+      "answers": [
+        "Khả năng chạy nhanh",
+        "Khả năng dễ bảo trì, sửa lỗi và nâng cấp",
+        "Khả năng bảo mật"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "22",
+      "topicID": 3,
+      "question": "Kiểm thử hộp đen (Black-box testing) tập trung vào:",
+      "answers": [
+        "Cấu trúc bên trong mã nguồn",
+        ". Đầu vào và đầu ra của hệ thống",
+        "Tốc độ biên dịch chương trình"
       ],
       "correctAnswer": 2
     }
+   
   ],
 
   "answers": [
@@ -49,8 +272,33 @@
       },
       {
         "questionId": 2,
+        "answer": 1
+      },
+            {
+        "questionId": 3,
+        "answer": 3
+      },
+            {
+        "questionId": 4,
+        "answer": 2
+      },
+            {
+        "questionId": 5,
+        "answer": 2
+      },
+            {
+        "questionId": 6,
+        "answer": 1
+      },
+            {
+        "questionId": 7,
+        "answer": 1
+      },
+            {
+        "questionId": 8,
         "answer": 2
       }
+      
     ],
     "id": 1
   },
@@ -66,7 +314,28 @@
       {
         "questionId": 2,
         "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 1
+      },
+      {
+        "questionId": 2,
+        "answer": 3
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 3
+      },
+      {
+        "questionId": 2,
+        "answer": 2
       }
+
     ],
     "id": 1
   },
@@ -77,6 +346,27 @@
     "answers": [
       {
         "questionId": 1,
+        "answer": 1
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 3
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      },
+
+      {
+        "questionId": 2,
         "answer": 2
       },
       {
