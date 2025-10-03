@@ -46,7 +46,7 @@ export const routesconfig = [
                         element: <Quiz />
                     },
                     {
-                    path:"Result",
+                    path:"Result/:id",
                     element:<Result/>
                     },
 

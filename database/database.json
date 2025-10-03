@@ -28,11 +28,11 @@
     {
       "id": "2",
       "topicID": 2,
-      "question": "HTML la viet tat cua",
+      "question": "CSS la viet tat cua cai gi",
       "answers": [
-        "xin chao",
-        "hello world",
-        "bui van dai"
+        "hello",
+        "hello bui van dai",
+        "xin chao ca nha"
       ],
       "correctAnswer": 2
     }
@@ -40,8 +40,40 @@
 
   "answers": [
   {
-    "userId": 5,
-    "topicId": 1,
+    "userId":"f511",
+    "topicID": 1,
+    "answers": [
+      {
+        "questionId": 1,
+        "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      }
+    ],
+    "id": 1
+  },
+
+  {
+    "userId":"f511",
+    "topicID": 2,
+    "answers": [
+      {
+        "questionId": 1,
+        "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      }
+    ],
+    "id": 1
+  },
+
+  {
+    "userId":"f511",
+    "topicID": 3,
     "answers": [
       {
         "questionId": 1,
@@ -54,6 +86,9 @@
     ],
     "id": 1
   }
+
+
+
 ],
 
   
