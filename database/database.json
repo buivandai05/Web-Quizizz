@@ -1,128 +1,98 @@
 {
-    "topics": [
-        {
-            "id": "1",
-            "Name": "HTML"
-        },
-        {
-            "id": "2",
-            "Name": "CSS"
-        },
-        {
-            "id": "3",
-            "Name": "Kỹ Thuật Phần Mền"
-        }
-    ],
-    "questions": [
-        {
-            "id": "1",
-            "topicId": "1",
-            "questionText": "Thẻ HTML nào dùng để tạo liên kết?",
-            "questionType": "single_choice"
-        },
-        {
-            "id": "2",
-            "topicId": "2",
-            "questionText": "Thuộc tính CSS nào để đổi màu chữ?",
-            "questionType": "single_choice"
-        },
-        {
-            "id": "3",
-            "topicId": "3",
-            "questionText": "Mô hình thác nước (Waterfall model) là gì?",
-            "questionType": "multiple_choice"
-        }
-    ],
+  "topics": [
+    {
+      "id": "1",
+      "Name": "HTML"
+    },
+    {
+      "id": "2",
+      "Name": "CSS"
+    },
+    {
+      "id": "3",
+      "Name": "Kỹ Thuật Phần Mền"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "topicID": 1,
+      "question": "HTML la viet tat cua",
+      "answers": [
+        "xin chao",
+        "hello world",
+        "bui van dai"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "id": "2",
+      "topicID": 2,
+      "question": "HTML la viet tat cua",
+      "answers": [
+        "xin chao",
+        "hello world",
+        "bui van dai"
+      ],
+      "correctAnswer": 2
+    }
+  ],
+
+  "answers": [
+  {
+    "userId": 5,
+    "topicId": 1,
     "answers": [
-        {
-            "id": "1",
-            "questionId": "1",
-            "answerText": "<a>",
-            "isCorrect": true
-        },
-        {
-            "id": "2",
-            "questionId": "1",
-            "answerText": "<link>",
-            "isCorrect": false
-        },
-        {
-            "id": "3",
-            "questionId": "1",
-            "answerText": "<href>",
-            "isCorrect": false
-        },
-        {
-            "id": "4",
-            "questionId": "1",
-            "answerText": "<url>",
-            "isCorrect": false
-        },
-        {
-            "id": "5",
-            "questionId": "2",
-            "answerText": "background-color",
-            "isCorrect": false
-        },
-        {
-            "id": "6",
-            "questionId": "2",
-            "answerText": "font-color",
-            "isCorrect": false
-        },
-        {
-            "id": "7",
-            "questionId": "2",
-            "answerText": "color",
-            "isCorrect": true
-        },
-        {
-            "id": "8",
-            "questionId": "2",
-            "answerText": "text-style",
-            "isCorrect": false
-        },
-        {
-            "id": "9",
-            "questionId": "3",
-            "answerText": "Là mô hình phát triển tuần tự",
-            "isCorrect": true
-        },
-        {
-            "id": "10",
-            "questionId": "3",
-            "answerText": "Các giai đoạn nối tiếp nhau",
-            "isCorrect": true
-        },
-        {
-            "id": "11",
-            "questionId": "3",
-            "answerText": "Có thể quay lại giai đoạn trước dễ dàng",
-            "isCorrect": false
-        },
-        {
-            "id": "12",
-            "questionId": "3",
-            "answerText": "Chỉ phù hợp cho dự án lớn",
-            "isCorrect": false
-        }
+      {
+        "questionId": 1,
+        "answer": 2
+      },
+      {
+        "questionId": 2,
+        "answer": 2
+      }
     ],
-    "users": [
-        {
-            "id": "1",
-            "name": "Dai",
-            "email": "buivandai23010@gmail.com",
-            "password": "lamvua",
-            "token": "xinchaomoinguoi"
-        },
-        {
-            "id": "f511"
-        },
-        {
-            "id": "2",
-            "name": "hong van tran",
-            "email": "hongtran@gamil.com",
-            "password": "handoi"
-        }
-    ]
+    "id": 1
+  }
+],
+
+  
+  "users": [
+    {
+      "id": "1",
+      "name": "Dai",
+      "email": "buivandai23010@gmail.com",
+      "password": "lamvua",
+      "token": "xinchaomoinguoi"
+    },
+    {
+      "id": "f511"
+    },
+    {
+      "id": "2",
+      "name": "hong van tran",
+      "email": "hongtran@gamil.com",
+      "password": "handoi"
+    },
+    {
+      "id": "e652"
+    },
+    {
+      "id": "9a08",
+      "name": "dai123",
+      "email": "dai@gamil.com",
+      "password": "han123",
+      "token": "0MyGTR3yCIgtxOZ4tP8J"
+    },
+    {
+      "id": "2927"
+    },
+    {
+      "id": "3ec5",
+      "name": "bui van a",
+      "email": "buivan@gamil.com",
+      "password": "a123",
+      "token": "3W4SDHt3jIa6InpfAV9K"
+    }
+  ]
 }

@@ -42,7 +42,7 @@ export const routesconfig = [
                     },
 
                     {
-                        path: "Quiz",
+                        path: "Quiz/:id",
                         element: <Quiz />
                     },
                     {
