@@ -1,0 +1,90 @@
+/* --- Biến (Variables) nhất quán với Login.scss --- */
+$primary-color: #00bcd4; // Xanh Ngọc
+$primary-dark: #0097a7;
+$background-color: #f7f9fb; 
+$text-color: #333333;
+$border-color: #e0e0e0;
+$shadow-light: rgba(0, 0, 0, 0.1);
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh; 
+}
+
+/* 1. Khối Form (Card) - Tái sử dụng phong cách */
+.register-card {
+    width: 400px; 
+    padding: 35px 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px $shadow-light; 
+    text-align: center;
+
+    h2 {
+        color: $primary-dark;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px; 
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px; // Giảm gap giữa các trường để form gọn hơn
+    }
+}
+
+
+.input-group {
+    input {
+        width: 100%;
+        padding: 13px 15px; // Giảm padding 1 chút
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        box-sizing: border-box; 
+        font-size: 16px;
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+        &:focus {
+            border-color: $primary-color;
+            box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.2); 
+            outline: none;
+        }
+    }
+}
+
+
+.register-button {
+    padding: 15px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+
+    &:hover {
+        background-color: $primary-dark;
+    }
+}
+
+/* 4. Liên kết Đăng nhập */
+.login-link {
+    margin-top: 25px;
+    font-size: 15px;
+    color: $text-color;
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

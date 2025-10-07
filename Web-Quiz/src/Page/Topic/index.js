@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import getTopic from "../../services/topicService";
+import "./main.scss";
 
 function Topic() {
 
@@ -20,13 +21,14 @@ function Topic() {
 
             {Topic.length > 0 && (
                 <>
-                    <h2>Ten chu de</h2>
+                <div className="topic-page-container">
+                    <h2>Đây là các chủ để bạn của bạn:</h2>
                     <table>
                         <thead>
                             <tr>
                                 <td>ID</td>
-                                <td>Ten chu de</td>
-                                <td>bui dai</td>
+                                <td>Tên chủ đề</td>
+                                <td>Start nhé</td>
                             </tr>
                         </thead>
                         <tbody>
@@ -37,7 +39,7 @@ function Topic() {
                                             <td>{item.id}</td>
                                             <td>{item.Name}</td>
                                             <td>
-                                                <Link to={"/Quiz/" + item.id} >Lam bai</Link>
+                                                <Link to={"/Quiz/" + item.id} >Làm bài</Link>
                                             </td>
                                         </tr>
                                     </>
@@ -45,6 +47,7 @@ function Topic() {
                             })}
                         </tbody>
                     </table>
+                </div>
                 </>
             )}
         </>

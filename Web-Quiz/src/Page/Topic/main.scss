@@ -1,0 +1,105 @@
+/* --- Biến SCSS (Nhất quán) --- */
+$primary-color: #00bcd4; // Xanh Ngọc
+$primary-dark: #0097a7;
+$text-color: #333333;
+$light-text: #666666;
+$border-color: #e0e0e0;
+$background-color-light: #f7f9fb; 
+$header-bg: #f2f2f2; // Màu nền đầu bảng
+
+
+.topic-page-container {
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: $primary-dark;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; // Quan trọng để dùng border-radius
+    border-spacing: 0;
+    max-width: 800px; // Giới hạn độ rộng để bảng không quá dài
+    margin-bottom: 40px;
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); // Đổ bóng nhẹ tinh tế
+    border-radius: 12px; // Bo góc cho cả bảng
+    overflow: hidden; // Quan trọng để bo góc áp dụng cho header
+}
+
+
+thead {
+    tr {
+        background-color: $header-bg;
+        
+        td {
+            font-weight: 600;
+            color: $text-color;
+            padding: 15px 20px;
+            border-bottom: 2px solid $border-color;
+            text-align: left;
+        }
+        
+        // Bo góc cho góc trên bên trái
+        td:first-child {
+            border-top-left-radius: 12px;
+        }
+        // Bo góc cho góc trên bên phải
+        td:last-child {
+            border-top-right-radius: 12px;
+        }
+    }
+}
+
+
+tbody {
+    tr {
+        transition: background-color 0.3s;
+        
+        td {
+            padding: 15px 20px;
+            border-bottom: 1px solid lighten($border-color, 5%);
+            color: $light-text;
+            font-size: 15px;
+        }
+        
+        // Hiệu ứng hover nổi bật
+        &:hover {
+            background-color: $background-color-light;
+            box-shadow: inset 3px 0 0 $primary-color; // Viền nổi bật bên trái
+        }
+        
+        // Loại bỏ đường kẻ dưới cùng
+        &:last-child td {
+            border-bottom: none;
+        }
+    }
+}
+
+
+a {
+    // Chỉ áp dụng cho link trong bảng
+    &[href^="/Quiz"] {
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 15px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 6px;
+        font-weight: 500;
+        font-size: 14px;
+        transition: background-color 0.3s, transform 0.1s;
+        
+        &:hover {
+            background-color: $primary-dark;
+            transform: translateY(-1px);
+        }
+        &:active {
+            transform: translateY(0);
+        }
+    }
+}

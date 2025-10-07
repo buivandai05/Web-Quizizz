@@ -5,6 +5,7 @@ import { getCookie } from "../../helpers/cookies";
 import { useSelector } from "react-redux";
 import loginReducer from "../../reducers/login";
 // import Home from "../../Page/Home";
+import logoimage from "../../image/logo.webp";
 
 function LayoutDefautl() {
     const token = getCookie("token");
@@ -14,7 +15,9 @@ function LayoutDefautl() {
         <>
             <div className="layout_defautl">
                 <header className="layout_header">
-                    <div className="layout_logo">logo</div>
+                    <div className="layout_logo">
+                        <img src={logoimage} alt="logo"></img>
+                    </div>
                     <div className="layout_menu">
                         <ul>
                             <li>

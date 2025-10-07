@@ -3,6 +3,7 @@ import { setCookie } from "../../helpers/cookies";
 import login from "../../services/usersService";
 import {useNavigate} from "react-router-dom";
 import { checkLogin } from "../../actions/login";
+import "./main.scss";
 
 function Login(){
 
@@ -30,18 +31,28 @@ function Login(){
     }
     return(
         <>
-        <form onSubmit={handleSubmit}>
-            <h2>Login ngay</h2>
-            <div>
+        <div className="login-page">
+            <div className="login-card">
+                <h2>Login ngay</h2>
+                <form onSubmit={handleSubmit}>
+            <div className="input-group">
                 <input type="email" placeholder="nhap email cua ban"/>
             </div>
-            <div>
+            <div className="input-group">
                 <input type="password" placeholder="nhập mật khẩu vào đây" />
             </div>
-            <button type="submit">
+            <button className="login-button" type="submit">
                 Login
             </button>
+            <div className="register-link">
+                Chưa có tài khoản đăng ký ngay <a href="./Register">Đăng ký ngay</a>
+
+            </div>
         </form>
+            </div>
+        </div>
+
+
         </>
     )
 }

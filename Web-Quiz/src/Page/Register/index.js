@@ -2,7 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { checkExits, register } from "../../services/usersService";
 import { generateToken } from "../../helpers/generateToken";
-
+import "./main.scss";
 
 
 function Register() {
@@ -41,21 +41,28 @@ function Register() {
     }
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <h2>Đăng ký ngay</h2>
-                <div>
+            <div className="register-page">
+                <div className="register-card">
+                    <h2>Đăng ký ngay</h2>
+                    <form onSubmit={handleSubmit}>
+                <div className="input-group">
                     <input type="fullName" placeholder="nhap họ và tên" />
                 </div>
-                <div>
+                <div className="input-group">
                     <input type="email" placeholder="nhap email cua ban" />
                 </div>
-                <div>
+                <div className="input-group">
                     <input type="password" placeholder="nhập mật khẩu vào đây" />
                 </div>
-                <button type="submit">
+                <button className="register-button" type="submit">
                     Login
                 </button>
+                <div className="login-link">
+                    Đã có tài khoản <a href="/Login">Đăng nhập ngay</a>
+                </div>
             </form>
+                </div>
+            </div>
         </>
     )
 }

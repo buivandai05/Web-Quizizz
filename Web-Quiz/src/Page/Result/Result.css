@@ -1,0 +1,6 @@
+.result_tag--true{
+color: green;
+}
+.result_tag--false{
+    color: red;
+}
