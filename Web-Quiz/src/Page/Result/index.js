@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getanswer } from "../../services/answers";
 import { getquestion } from "../../services/questionService";
+import "./main.scss";
 
 function Result() {
     const prams = useParams();
@@ -51,11 +52,18 @@ function Result() {
 
                             if (item.answer === indexAns) {
                                 checked = true;
-                                className = "result_item--selected";
-                            }
 
-                            if (item.correctAnswer === indexAns) {
-                                className += " result_item--result";
+
+                                if (Number(item.correctAnswer) === Number(indexAns)) {
+
+                                    className = "result_item--selected correct";
+                                } else {
+
+                                    className = "result_item--selected incorrect";
+                                }
+                            } else if (item.correctAnswer === indexAns) {
+
+                                className = "result_item--result";
                             }
 
                             return (
