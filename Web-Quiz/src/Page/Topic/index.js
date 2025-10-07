@@ -28,7 +28,7 @@ function Topic() {
                             <tr>
                                 <td>ID</td>
                                 <td>Tên chủ đề</td>
-                                <td>Start nhé</td>
+                                <td>Start </td>
                             </tr>
                         </thead>
                         <tbody>
