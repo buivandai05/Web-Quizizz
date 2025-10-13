@@ -36,10 +36,10 @@ function Login(){
                 <h2>Login ngay</h2>
                 <form onSubmit={handleSubmit}>
             <div className="input-group">
-                <input type="email" placeholder="nhap email cua ban"/>
+                <input type="email" placeholder="nhập email của bạn "/>
             </div>
             <div className="input-group">
-                <input type="password" placeholder="nhập mật khẩu vào đây" />
+                <input type="password" placeholder="nhập mật khẩu của bạn" />
             </div>
             <button className="login-button" type="submit">
                 Login

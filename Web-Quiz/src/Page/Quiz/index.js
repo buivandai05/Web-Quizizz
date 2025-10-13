@@ -9,7 +9,7 @@ function Quiz() {
     const prams = useParams();
     const [datatopic, setdatatopic] = useState();
     const [dataquetion, setquetion] = useState([]);
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchApi = async () => {
@@ -29,42 +29,42 @@ function Quiz() {
         fetchApi();
     }, [])
 
-    const hanldeSubmit =async (e) => {
+    const hanldeSubmit = async (e) => {
         e.preventDefault();
         // console.log(e);
 
-        let seletcedAnswers=[];
+        let seletcedAnswers = [];
 
-        for(let i=0; i<e.target.elements.length;i++){
-            if(e.target.elements[i].checked){
-                const name=e.target.elements[i].name;
-                const value=e.target.elements[i].value;
+        for (let i = 0; i < e.target.elements.length; i++) {
+            if (e.target.elements[i].checked) {
+                const name = e.target.elements[i].name;
+                const value = e.target.elements[i].value;
 
                 seletcedAnswers.push({
-                    questionId:parseInt(name),
-                    answer:parseInt(value)
+                    questionId: parseInt(name),
+                    answer: parseInt(value)+1
                 })
             }
         }
         // console.log(seletcedAnswers);
 
-        let options={
+        let options = {
             userId: parseInt(getCookie("id")),
-            topicID:parseInt(prams.id),
+            topicID: parseInt(prams.id),
             answers: seletcedAnswers
 
         }
 
-        const response=await createAnswer(options);
+        const response = await createAnswer(options);
         console.log(response);
-        if(response){
+        if (response) {
             navigate(`/Result/${response.id}`);
         }
     }
 
     return (
         <>
-            <h2>Bai Quiz: chu de HTML:
+            <h2>Chủ đề của bài Quiz là:
                 {datatopic && (<>{datatopic.Name}</>)}
             </h2>
 
