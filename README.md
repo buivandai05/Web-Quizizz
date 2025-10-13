@@ -35,6 +35,9 @@ flowchart TD
   D --> E[Hệ thống lưu kết quả vào Database]
   E --> F[Hiển thị kết quả cho người dùng]
 ```
+---
+## UML 
+![UML](https://github.com/buivandai05/Web-Quizizz/blob/main/ChatGPT%20Image%20Oct%2013%2C%202025%2C%2010_11_42%20PM.png)
 ---  
 ## Giao diện trang chủ  
 ![Ảnh giao diện ](https://github.com/buivandai05/Web-Quizizz/blob/main/Screenshot%202025-10-13%20162054.png)
