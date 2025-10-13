@@ -24,5 +24,8 @@
 - SCSS
 - JAVASCRIPT
 - REACT.JS
+---  
+##Giao diện trang chủ  
+
   
 
