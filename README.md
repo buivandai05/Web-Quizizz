@@ -24,6 +24,17 @@
 - SCSS
 - JAVASCRIPT
 - REACT.JS
+---   
+## 🧠 Lưu đồ thuật toán
+
+```mermaid
+flowchart TD
+  A[Người dùng truy cập Web] --> B[Chọn chủ đề Quiz]
+  B --> C[Làm bài Quiz]
+  C --> D[Gửi kết quả]
+  D --> E[Hệ thống lưu kết quả vào Database]
+  E --> F[Hiển thị kết quả cho người dùng]
+```
 ---  
 ## Giao diện trang chủ  
 ![Ảnh giao diện ](https://github.com/buivandai05/Web-Quizizz/blob/main/Screenshot%202025-10-13%20162054.png)
