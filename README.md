@@ -25,7 +25,9 @@
 - JAVASCRIPT
 - REACT.JS
 ---  
-##Giao diện trang chủ  
+## Giao diện trang chủ  
+![Ảnh giao diện ](https://github.com/buivandai05/Web-Quizizz/blob/main/Screenshot%202025-10-13%20162054.png)
+
 
   
 
