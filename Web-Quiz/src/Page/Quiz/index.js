@@ -8,58 +8,58 @@ import { createAnswer } from "../../services/quizService";
 function Quiz() {
     const prams = useParams();
     const [datatopic, setdatatopic] = useState();
-    const [dataquetion, setquetion] = useState([]);
-    const navigate = useNavigate();
+    const [dataquestion, setdataquestion] = useState([]);
+    const Navigate=useNavigate();
 
     useEffect(() => {
         const fetchApi = async () => {
             const response = await getlistopic(prams.id);
             setdatatopic(response);
         }
-        fetchApi();
+        fetchApi(datatopic);
     }, [])
 
 
     useEffect(() => {
         const fetchApi = async () => {
             const response = await getquestion(prams.id);
-            setquetion(response);
-            console.log(response);
+            setdataquestion(response);
+
         }
-        fetchApi();
+        fetchApi(datatopic);
     }, [])
 
-    const hanldeSubmit = async (e) => {
+    const handlesubmit = async(e) => {
         e.preventDefault();
-        // console.log(e);
+        console.log(e);
 
-        let seletcedAnswers = [];
-
+        let selectedAns = [];
         for (let i = 0; i < e.target.elements.length; i++) {
             if (e.target.elements[i].checked) {
                 const name = e.target.elements[i].name;
                 const value = e.target.elements[i].value;
 
-                seletcedAnswers.push({
+                selectedAns.push({
                     questionId: parseInt(name),
-                    answer: parseInt(value)+1
+                    answer: parseInt(value)
                 })
             }
-        }
-        // console.log(seletcedAnswers);
 
+        }
+        // console.log(selectedAns);
         let options = {
+            
             userId: parseInt(getCookie("id")),
-            topicID: parseInt(prams.id),
-            answers: seletcedAnswers
-
+            topicID:parseInt(prams.id),
+            answers:selectedAns,
         }
-
-        const response = await createAnswer(options);
+       
+        const response=await createAnswer(options);
         console.log(response);
-        if (response) {
-            navigate(`/Result/${response.id}`);
+        if(response){
+            Navigate(`/Result/${response.id}`);
         }
+
     }
 
     return (
@@ -67,29 +67,32 @@ function Quiz() {
             <h2>Chủ đề của bài Quiz là:
                 {datatopic && (<>{datatopic.Name}</>)}
             </h2>
-
             <div className="from-quiz">
-
-                <form onSubmit={hanldeSubmit}>
-
-                    {dataquetion.map((item, index) => {
+                <form onSubmit={handlesubmit}>
+                    {dataquestion.map((item, index) => {
                         return (
-                            <div className="quiz-item">
-                                <p>Câu{index + 1}:{item.question}</p>
-                                {item.answers.map((itemAnswer, indexAnswer) => {
+                            <div className="from-quiz-item" key={item.id}>
+                                <p> Câu {index+1}:{item.question}</p>
+                                {item.answers.map((itemAns, indexAns) => {
                                     return (
-                                        <>
-                                            <div className="quiz-answer">
-                                                <input type="radio" name={item.id} value={indexAnswer} id={`quiz-${item.id}- ${indexAnswer}`} />
-                                                <label htmlFor={`quiz-${item.id}- ${indexAnswer}`}>{itemAnswer}</label>
-                                            </div>
-                                        </>
+                                        <div className="from-quiz-answer" key={indexAns}>
+                                            <input
+                                                type="radio"
+                                                name={item.id}
+                                                value={indexAns}
+                                                id={`Quiz-${item.id}-${indexAns}`}
+                                            >
+
+                                            </input>
+                                            <label htmlFor={`Quiz-${item.id}-${indexAns}`}>{itemAns}</label>
+
+                                        </div>
                                     )
                                 })}
                             </div>
                         )
                     })}
-                    <button type="submit">nop bai</button>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </>

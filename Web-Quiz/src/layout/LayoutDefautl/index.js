@@ -38,8 +38,8 @@ function LayoutDefautl() {
                         {token ? (<>
                             <NavLink to="/Logout"> Đăng xuất </NavLink>
                         </>) : (<>
-                            <NavLink to="/Login">dang nhap</NavLink>
-                            <NavLink to="/Register"> dang ky </NavLink>
+                            <NavLink to="/Login">Login</NavLink>
+                            <NavLink to="/Register"> Register </NavLink>
                         </>)}
                     </div>
                 </header>

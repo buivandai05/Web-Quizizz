@@ -1,118 +1,177 @@
-/* --- Biến SCSS (Màu sắc nhất quán) --- */
-$primary-color: #00bcd4; 
-$correct-color: #28a745; // Xanh lá cây
-$incorrect-color: #dc3545; // Đỏ
-$text-color: #333333;
-$light-bg: #f8f9fa;
-$border-color: #e0e0e0;
+// --- Biến và Cấu hình chung ---
+$primary-color: #007bff; // Màu chủ đạo (ví dụ: xanh dương của Phoenixaa)
+$success-color: #28a745; // Màu cho trạng thái "Đúng" (Xanh lá)
+$error-color: #dc3545;   // Màu cho trạng thái "Sai" (Đỏ)
+$text-dark: #343a40;     // Màu chữ chính
+$text-light: #6c757d;    // Màu chữ phụ
+$bg-light: #f8f9fa;      // Màu nền nhẹ
 
-/* --- CSS Chung cho Trang Kết Quả --- */
+// Sử dụng Google Font (Poppins là một lựa chọn hiện đại)
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: $bg-light;
+    padding-bottom: 50px; // Thêm không gian cuối trang
+}
+
+// --- Tiêu đề chính ---
 h1 {
-    font-size: 36px;
-    font-weight: 700;
     color: $primary-color;
+    font-weight: 700;
+    font-size: 2.2rem;
+    padding-bottom: 20px;
+    border-bottom: 3px solid rgba($primary-color, 0.1); // Đường gạch chân nhẹ
     margin-bottom: 30px;
 }
 
-.result_list {
-    max-width: 900px;
-    margin: 0 auto;
+// --- Container chứa danh sách câu hỏi ---
+.answer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; // Khoảng cách giữa các câu hỏi
 }
 
-/* 1. Khối Câu Hỏi (Result Item) */
-.result_item {
-    background-color: white;
-    padding: 25px 30px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); // Đổ bóng tinh tế
+// --- Khối từng câu hỏi ---
+.result-item {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); // Đổ bóng nhẹ và "đẳng cấp"
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px); // Hiệu ứng hover nhẹ
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
 
     p {
-        font-size: 20px;
+        font-size: 1.15rem;
         font-weight: 600;
-        color: $text-color;
+        color: $text-dark;
         margin-bottom: 15px;
-        display: flex;
-        align-items: center;
+        line-height: 1.5;
     }
 }
 
-/* 2. Tag Đúng/Sai ngay sau Câu hỏi */
+// --- Thẻ trạng thái Đúng/Sai ---
 .result_tag {
-    font-size: 16px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
     font-weight: 700;
-    padding: 2px 10px;
-    border-radius: 5px;
-    margin-left: 10px;
-    color: white;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
 
     &--true {
-        background-color: $correct-color;
+        background-color: lighten($success-color, 40%); // Nền nhạt
+        color: $success-color;                         // Chữ đậm
+        border: 1px solid $success-color;
     }
+
     &--false {
-        background-color: $incorrect-color;
+        background-color: lighten($error-color, 30%); // Nền nhạt
+        color: $error-color;                         // Chữ đậm
+        border: 1px solid $error-color;
     }
 }
 
-/* 3. Thiết kế Đáp án (Answer Row) */
-.result_answer {
+// --- Khối đáp án ---
+.result-answer {
     display: flex;
     align-items: center;
-    padding: 10px 15px;
     margin-bottom: 8px;
-    border-radius: 6px;
-    position: relative;
-    transition: background-color 0.2s;
-
+    cursor: default; // Vô hiệu hóa hành vi click
+    
+    // Ẩn radio mặc định và tự tạo kiểu cho nó
     input[type="radio"] {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $text-light;
+        border-radius: 50%;
         margin-right: 10px;
-        // Ẩn radio button mặc định để dùng CSS custom
-        opacity: 0; 
-        width: 0;
+        flex-shrink: 0; // Không bị co lại
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        
+        &:checked {
+            border-color: $primary-color;
+            background-color: $primary-color;
+            &::after { // Dấu chấm nhỏ bên trong khi checked
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #ffffff;
+                transform: translate(-50%, -50%);
+            }
+        }
     }
+
     label {
-        color: $text-color;
-        flex-grow: 1; // Cho phép label chiếm không gian
-    }
-}
+        flex-grow: 1;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 1rem;
+        color: $text-dark;
+        transition: all 0.2s ease;
+        line-height: 1.5;
 
-/* --- LOGIC HIỂN THỊ ĐÚNG/SAI BẰNG ICON --- */
+        // Đáp án người dùng chọn (Sai hoặc Đúng)
+        &.result_item--selected {
+            background-color: rgba($primary-color, 0.1); // Nền nhẹ
+            font-weight: 600;
+            // Cập nhật màu radio cho đáp án được chọn
+            & + input[type="radio"] {
+                border-color: $primary-color;
+            }
+        }
+        
+        // Đáp án ĐÚNG (màu xanh lá)
+        &.result_item--result {
+            background-color: lighten($success-color, 35%); // Nền xanh lá nhạt
+            color: darken($success-color, 10%);            // Chữ xanh đậm
+            font-weight: 600;
+            // Cập nhật màu radio cho đáp án đúng
+            & + input[type="radio"] {
+                border-color: $success-color;
+                background-color: $success-color;
+            }
+        }
+        
+        // Trường hợp đáp án được chọn LÀ đáp án đúng
+        &.result_item--selected.result_item--result {
+            // Đáp án này đã được định nghĩa ở trên, màu xanh lá sẽ đè lên
+            // Tuy nhiên, có thể muốn làm nó nổi bật hơn một chút:
+            border: 1px solid $success-color;
+        }
 
-// Khối chứa icon (đặt bên phải)
-.result_answer::after {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    line-height: 20px; // Căn giữa chữ/icon
-}
-
-
-// 3a. Đáp án ĐÚNG (Có class result_item--result)
-.result_answer.result_item--result {
-    background-color: lighten($correct-color, 45%); // Nền xanh lá nhạt
-    border: 1px solid $correct-color;
-
-    &::after {
-        content: "\2713"; // Dấu Tích Unicode
-        background-color: $correct-color;
-    }
-}
-
-
-// 3b. Đáp án SAI người dùng chọn (Có class result_item--selected nhưng KHÔNG có result_item--result)
-.result_answer.result_item--selected:not(.result_item--result) {
-    background-color: lighten($incorrect-color, 35%); // Nền đỏ nhạt
-    border: 1px solid $incorrect-color;
-
-    &::after {
-        content: "\2715"; // Dấu X Unicode
-        background-color: $incorrect-color;
+        // Cập nhật trường hợp đáp án được chọn LÀ SAI
+        .result-item:has(.result_tag--false) & {
+            // Khi câu hỏi là "Sai"
+            &.result_item--selected {
+                background-color: lighten($error-color, 30%); // Nền đỏ nhạt
+                color: $error-color;                          // Chữ đỏ đậm
+                
+                & + input[type="radio"] {
+                    border-color: $error-color;
+                }
+            }
+            // Đáp án đúng vẫn là màu xanh lá
+            &.result_item--result {
+                background-color: lighten($success-color, 35%);
+                color: darken($success-color, 10%);
+                & + input[type="radio"] {
+                    border-color: $success-color;
+                    background-color: $success-color;
+                }
+            }
+        }
     }
 }

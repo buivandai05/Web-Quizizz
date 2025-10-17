@@ -1,7 +1,7 @@
 {
   "topics": [
     {
-      "id": "1",
+      "id": 1,
       "Name": "HTML"
     },
     {
@@ -15,7 +15,7 @@
   ],
   "questions": [
     {
-      "id": "1",
+      "id": 1,
       "topicID": 1,
       "question": "HTML la viet tat cua",
       "answers": [
@@ -23,10 +23,10 @@
         " Hyper Text Markup Language",
         "Hyper tech Make Langugue"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "2",
+      "id": 2,
       "topicID": 1,
       "question": "Trong HTML thuộc tính nào là để làm tiêu đề lớn ",
       "answers": [
@@ -34,10 +34,10 @@
         "<A>",
         "<p></p>"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
-      "id": "3",
+      "id": 3,
       "topicID": 1,
       "question": "BVD là viết tắt của từ gì ",
       "answers": [
@@ -45,10 +45,10 @@
         "browers value daliy",
         "BÙI VĂN ĐẠI"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 2
     },
     {
-      "id": "4",
+      "id": 4,
       "topicID": 1,
       "question": "Thuộc tính nào dùng để đặt địa chỉ URL cho thẻ <a>?",
       "answers": [
@@ -56,10 +56,10 @@
         "href",
         "link"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "5",
+      "id": 5,
       "topicID": 1,
       "question": "Thẻ nào dùng để chèn ảnh vào trang HTML?",
       "answers": [
@@ -67,10 +67,10 @@
         "<img>",
         "<image>"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "6",
+      "id": 6,
       "topicID": 1,
       "question": "Dòng khai báo nào thường đứng đầu một tài liệu HTML5?",
       "answers": [
@@ -78,10 +78,10 @@
         "<!-- HTML5 -->",
         "<html version=5>"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
-      "id": "7",
+      "id": 7,
       "topicID": 1,
       "question": "Thẻ nào là thẻ ngữ nghĩa (semantic), dùng cho nội dung chính của trang?",
       "answers": [
@@ -89,10 +89,10 @@
         "<div>",
         "<span>"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
-      "id": "8",
+      "id": 8,
       "topicID": 1,
       "question": "Thuộc tính alt của <img> dùng để làm gì?",
       "answers": [
@@ -100,10 +100,10 @@
         "Văn bản thay thế khi ảnh không hiển thị",
         "Liên kết đến ảnh khác"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "9",
+      "id": 9,
       "topicID": 2,
       "question": "CSS là viết tắt của gì?",
       "answers": [
@@ -111,10 +111,10 @@
         "Cascading Style Sheets",
         "Computer Styling System"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "10",
+      "id": 10,
       "topicID": 2,
       "question": "Cách chỉnh để chỉnh 2 khối box ra căn đều 2 lề bên cạnh ",
       "answers": [
@@ -122,10 +122,10 @@
         "space bettwen",
         "Hello world"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "11",
+      "id": 11,
       "topicID": 2,
       "question": "Thuộc tính nào để căn giữa chữ trong phần tử?",
       "answers": [
@@ -133,10 +133,10 @@
         "align-center",
         "font center"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
-      "id": "12",
+      "id": 12,
       "topicID": 2,
       "question": "NGÀY SINH ĐẦY ĐỦ CỦA BÙI VĂN ĐẠI",
       "answers": [
@@ -144,10 +144,10 @@
         "28-03-2005",
         "28-10-2005"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 2
     },
     {
-      "id": "13",
+      "id": 13,
       "topicID": 2,
       "question": "Thuộc tính CSS nào để đổi màu chữ ?",
       "answers": [
@@ -155,10 +155,10 @@
         "background-color",
         "color"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 2
     },
     {
-      "id": "14",
+      "id": 14,
       "topicID": 2,
       "question": "CSS có thể được viết theo cách nào?",
       "answers": [
@@ -166,10 +166,10 @@
         "Internal CSS",
         "External CSS"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 2
     },
     {
-      "id": "15",
+      "id": 15,
       "topicID": 2,
       "question": "Thuộc tính nào thay đổi kích thước chữ?",
       "answers": [
@@ -177,10 +177,10 @@
         "font-size",
         "color-size"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "16",
+      "id": 16,
       "topicID": 3,
       "question": "Mô hình phát triển phần mềm Waterfall (thác nước) có đặc điểm gì?",
       "answers": [
@@ -188,10 +188,10 @@
         "Các giai đoạn làm song song",
         "Không cần phân tích yêu cầu"
       ],
-      "correctAnswer": 1
+      "correctAnswer": 0
     },
     {
-      "id": "17",
+      "id": 17,
       "topicID": 3,
       "question": "Agile nhấn mạnh điều gì?",
       "answers": [
@@ -199,10 +199,10 @@
         "Linh hoạt, phản hồi nhanh thay đổi",
         "Tài liệu chi tiết quan trọng hơn phần mềm chạy được"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "18",
+      "id": 18,
       "topicID": 3,
       "question": "Giai đoạn nào trong phát triển phần mềm thường diễn ra đầu tiên?",
       "answers": [
@@ -210,10 +210,10 @@
         "Phân tích yêu cầu (Requirement Analysis)",
         "Kiểm thử (Testing)"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "19",
+      "id": 19,
       "topicID": 3,
       "question": "UML được sử dụng để làm gì?",
       "answers": [
@@ -221,10 +221,10 @@
         "Ngôn ngữ mô hình hóa phần mềm",
         "Hệ điều hành"
       ],
-      "correctAnswer": 3
+      "correctAnswer": 2
     },
     {
-      "id": "20",
+      "id": 20,
       "topicID": 3,
       "question": "HTML la viet tat cua",
       "answers": [
@@ -232,10 +232,10 @@
         "hello world",
         "bui van dai"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "21",
+      "id": 21,
       "topicID": 3,
       "question": "Khái niệm “Maintainability” trong phần mềm nói về gì?",
       "answers": [
@@ -243,10 +243,10 @@
         "Khả năng dễ bảo trì, sửa lỗi và nâng cấp",
         "Khả năng bảo mật"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     },
     {
-      "id": "22",
+      "id": 22,
       "topicID": 3,
       "question": "Kiểm thử hộp đen (Black-box testing) tập trung vào:",
       "answers": [
@@ -254,56 +254,64 @@
         ". Đầu vào và đầu ra của hệ thống",
         "Tốc độ biên dịch chương trình"
       ],
-      "correctAnswer": 2
+      "correctAnswer": 1
     }
   ],
   "answers": [
     {
-      "userId": "f511",
+      "userId": 1,
       "topicID": 1,
       "answers": [
         {
           "questionId": 1,
-          "answer": 2
+          "answer": 1
         },
         {
           "questionId": 2,
-          "answer": 1
+          "answer": 0
         },
         {
           "questionId": 3,
-          "answer": 3
+          "answer": 2
         },
         {
           "questionId": 4,
-          "answer": 2
+          "answer": 1
         },
         {
           "questionId": 5,
-          "answer": 2
+          "answer": 1
         },
         {
           "questionId": 6,
-          "answer": 1
+          "answer": 0
         },
         {
           "questionId": 7,
-          "answer": 1
+          "answer": 0
         },
         {
           "questionId": 8,
-          "answer": 2
+          "answer": 1
         }
       ],
-      "id": "1"
+      "id": 1
     },
     {
-      "userId": "f511",
+      "userId": 1,
       "topicID": 2,
       "answers": [
         {
           "questionId": 1,
-          "answer": 2
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 0
         },
         {
           "questionId": 2,
@@ -315,29 +323,29 @@
         },
         {
           "questionId": 2,
-          "answer": 3
-        },
-        {
-          "questionId": 2,
           "answer": 2
         },
         {
           "questionId": 2,
-          "answer": 3
-        },
-        {
-          "questionId": 2,
-          "answer": 2
+          "answer": 1
         }
       ],
-      "id": "1"
+      "id": 1
     },
     {
-      "userId": "f511",
+      "userId": 1,
       "topicID": 3,
       "answers": [
         {
           "questionId": 1,
+          "answer": 0
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
           "answer": 1
         },
         {
@@ -346,29 +354,21 @@
         },
         {
           "questionId": 2,
-          "answer": 2
+          "answer": 1
         },
         {
           "questionId": 2,
-          "answer": 3
+          "answer": 1
         },
         {
           "questionId": 2,
-          "answer": 2
-        },
-        {
-          "questionId": 2,
-          "answer": 2
-        },
-        {
-          "questionId": 2,
-          "answer": 2
+          "answer": 1
         }
       ],
-      "id": "1"
+      "id": 1
     },
     {
-      "id": "52a6",
+      "id": 1,
       "userId": 1,
       "topicID": 2,
       "answers": [
@@ -403,7 +403,7 @@
       ]
     },
     {
-      "id": "50cd",
+      "id": 1,
       "userId": 1,
       "topicID": 2,
       "answers": [
@@ -434,7 +434,7 @@
       ]
     },
     {
-      "id": "f562",
+      "id": "1",
       "userId": 1,
       "topicID": 2,
       "answers": [
@@ -465,7 +465,7 @@
       ]
     },
     {
-      "id": "f014",
+      "id": "1",
       "userId": null,
       "topicID": 1,
       "answers": [
@@ -1272,6 +1272,465 @@
         },
         {
           "questionId": 22,
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": "686f",
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 2
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 2
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 2
+        },
+        {
+          "questionId": 15,
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "3ece",
+      "userId": 1,
+      "topicID": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 2
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 3
+        },
+        {
+          "questionId": 4,
+          "answer": 2
+        },
+        {
+          "questionId": 5,
+          "answer": 2
+        },
+        {
+          "questionId": 6,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 2
+        },
+        {
+          "questionId": 8,
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": "64b9",
+      "userId": null,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 2
+        },
+        {
+          "questionId": 10,
+          "answer": 2
+        },
+        {
+          "questionId": 11,
+          "answer": 2
+        },
+        {
+          "questionId": 12,
+          "answer": 2
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 0
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 1
+        }
+      ],
+      "id": "3EbgZH_"
+    },
+    {
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 1
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ],
+      "id": "rcLvWVC"
+    },
+    {
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 1
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ],
+      "id": "cGBsjYg"
+    },
+    {
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ],
+      "id": "e_Qt7oj"
+    },
+    {
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ],
+      "id": "9ordA8m"
+    },
+    {
+      "id": "9ordA8m1",
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": 9906,
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": 9907,
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 0
+        },
+        {
+          "questionId": 11,
+          "answer": 1
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 1
+        },
+        {
+          "questionId": 15,
+          "answer": 2
+        }
+      ]
+    },
+    {
+      "id": 9908,
+      "userId": 1,
+      "topicID": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "answer": 1
+        },
+        {
+          "questionId": 2,
+          "answer": 1
+        },
+        {
+          "questionId": 3,
+          "answer": 2
+        },
+        {
+          "questionId": 4,
+          "answer": 1
+        },
+        {
+          "questionId": 5,
+          "answer": 1
+        },
+        {
+          "questionId": 6,
+          "answer": 2
+        },
+        {
+          "questionId": 7,
+          "answer": 1
+        },
+        {
+          "questionId": 8,
+          "answer": 1
+        }
+      ]
+    },
+    {
+      "id": 9909,
+      "userId": 1,
+      "topicID": 2,
+      "answers": [
+        {
+          "questionId": 9,
+          "answer": 1
+        },
+        {
+          "questionId": 10,
+          "answer": 1
+        },
+        {
+          "questionId": 11,
+          "answer": 0
+        },
+        {
+          "questionId": 12,
+          "answer": 1
+        },
+        {
+          "questionId": 13,
+          "answer": 2
+        },
+        {
+          "questionId": 14,
+          "answer": 0
+        },
+        {
+          "questionId": 15,
           "answer": 1
         }
       ]

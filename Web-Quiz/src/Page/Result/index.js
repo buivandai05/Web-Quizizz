@@ -10,76 +10,73 @@ function Result() {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const dataAnsers = await getanswer(prams.id);
-            const dataQuestion = await getquestion(dataAnsers.topicID);
-            console.log(dataAnsers.answers);
-
+            const dataAnswers = await getanswer(prams.id);
+            const dataquestions = await getquestion(dataAnswers.
+                topicID
+            );
+            // console.log(dataAnswers.answers);
+            // console.log(dataquestions);
+            // console.log(dataAnswers);
             let resultFinal = [];
-            for (let i = 0; i < dataQuestion.length; i++) {
+
+            for (let i = 0; i < dataquestions.length; i++) {
                 resultFinal.push({
-                    ...dataQuestion[i],
-                    ...dataAnsers.answers.find(
-                        (item) => item.questionId === dataQuestion[i].id
-                    ),
+                    ...dataquestions[i],
+                    ...dataAnswers.answers.find(item => item.questionId === dataquestions[i].id)
+
                 });
             }
             setdataResult(resultFinal);
-
-
-
-        };
+        }
         fetchApi();
-    }, [prams.id]);
+    })
+
+
 
     return (
         <>
-            <h1>Kết quả:</h1>
-            <div className="result_list">
-                {dataResult.map((item, index) => (
-                    <div className="result_item" key={item.id}>
-                        <p>
-                            Câu {index + 1}: {item.question}
-                            {Number(item.correctAnswer) === Number(item.answer) ? (
-                                <span className="result_tag result_tag--true"> :Đúng</span>
+            <h1>Kết quả của bài bạn làm là:</h1>
+            <div className="answer-list">
+                {dataResult.map((item, index) => {
+                    return (
+
+                        <div className="result-item" key={item.id}>
+                            <p> Câu {index + 1}:{item.question}</p>
+                            {[item.correctAnswer === item.answer ? (
+                                <span className="result_tag
+                                result_tag--true">Đúng</span>
                             ) : (
-                                <span className="result_tag result_tag--false"> :Sai</span>
-                            )}
-                        </p>
+                                <span className="result_tag
+                                result_tag--false">Sai</span>
+                            )]}
+                            {item.answers.map((itemAns, indexAns) => {
 
-                        {item.answers.map((itemAns, indexAns) => {
-                            let className = "";
-                            let checked = false;
+                                let className = "";
+                                let checked = false;
 
-                            if (item.answer === indexAns) {
-                                checked = true;
-
-
-                                if (Number(item.correctAnswer) === Number(indexAns)) {
-
-                                    className = "result_item--selected correct";
-                                } else {
-
-                                    className = "result_item--selected incorrect";
+                                if (item.answer === indexAns) {
+                                    checked = true;
+                                    className = "result_item--selected";
                                 }
-                            } else if (item.correctAnswer === indexAns) {
 
-                                className = "result_item--result";
-                            }
+                                if (item.correctAnswer === index) {
+                                    className += " result_item--result";
+                                }
+                                return (
+                                    <div className="result-answer" key={indexAns}>
+                                        <input
+                                            type="radio"
+                                            checked={checked} disabled
+                                        />
+                                        
+                                        <label className={className} >{itemAns}</label>
 
-                            return (
-                                <div className={`result_answer ${className}`} key={indexAns}>
-                                    <input
-                                        type="radio"
-                                        name={`question_${index}`}
-                                        checked={checked}
-                                        disabled
-                                    />
-                                    <label>{itemAns}</label>
-                                </div>
-                            );
-                        })}
-                    </div>
-                ))}
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    )
+                })}
             </div>
         </>
     );

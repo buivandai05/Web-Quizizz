@@ -6,7 +6,7 @@ const getTopic = async () => {
 };
 export default getTopic;
 
- export const getlistopic=async(id)=>{
+ export const getlistopic= async(id)=>{
     const result=await get(`topics/${id}`);
     return result;
 }
